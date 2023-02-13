@@ -11,7 +11,7 @@ namespace GenericConcept
         static void Main(string[] args)
         {
             Console.WriteLine("Please choose program to execute");
-            Console.WriteLine("1:Find max integer\n2:Find max float");
+            Console.WriteLine("1:Find max integer\n2:Find max float\n3:Find greater string");
             int option = Convert.ToInt32(Console.ReadLine());
 
             switch (option)
@@ -33,6 +33,19 @@ namespace GenericConcept
                     float secondFloat = Convert.ToInt64(Console.ReadLine());
                     Console.WriteLine("Enter third float number");
                     float thirdFloat = Convert.ToInt64(Console.ReadLine());
+
+                    FindMaximum.FindMaximumValue(firstFloat, secondFloat, thirdFloat);
+                    break;
+                case 3:
+                    Console.WriteLine("Enter first string");
+                    string firstString = Console.ReadLine();
+                    Console.WriteLine("Enter second secomd string");
+                    string secondString = Console.ReadLine();
+                    Console.WriteLine("Enter third third string");
+                    string thirdString = Console.ReadLine();
+
+                    FindMaximum.FindMaximumValue(firstString, secondString, thirdString);
+                    break;
 
                     FindMaximum.FindMaximumValue(firstFloat, secondFloat, thirdFloat);
                     break;
