@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FindMaxUsingSort.cs" />
     <Compile Include="FindMaximum.cs" />
     <Compile Include="GenericConceptFindMax.cs" />
     <Compile Include="Program.cs" />

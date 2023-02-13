@@ -11,7 +11,7 @@ namespace GenericConcept
         static void Main(string[] args)
         {
             Console.WriteLine("Please choose program to execute");
-            Console.WriteLine("1:Find max integer\n2:Find max float\n3:Find greater string\n4:Find max using generic concept");
+            Console.WriteLine("1:Find max integer\n2:Find max float\n3:Find greater string\n4:Find max using generic concept\n5:Find Max using sorting");
             int option = Convert.ToInt32(Console.ReadLine());
 
             switch (option)
@@ -73,6 +73,11 @@ namespace GenericConcept
                     string thirdString1 = Console.ReadLine();
                     GenericConceptFindMax<string> stringObj = new GenericConceptFindMax<string>(firstString1, secondString1, thirdString1);
                     stringObj.TestMax();
+                    break;
+                case 5:
+                    FindMaxUsingSort.FindMaxInteger();
+                    FindMaxUsingSort.FindMaxfloat();
+                    FindMaxUsingSort.FindMaxString();
                     break;
             }
             Console.ReadLine();
