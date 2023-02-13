@@ -46,6 +46,7 @@
     <Compile Include="FindMaxUsingSort.cs" />
     <Compile Include="FindMaximum.cs" />
     <Compile Include="GenericConceptFindMax.cs" />
+    <Compile Include="GenericsFindMaxBySort.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
