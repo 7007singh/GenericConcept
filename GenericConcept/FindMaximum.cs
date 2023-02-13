@@ -27,5 +27,25 @@ namespace GenericConcept
                 Console.WriteLine("Two or three numbers are same");
             }
         }
+
+        public static void FindMaximumValue(float first, float second, float third)
+        {
+            if (first.CompareTo(second) > 0 && first.CompareTo(third) > 0)
+            {
+                Console.WriteLine($"Maximum value is {first}");
+            }
+            else if (second.CompareTo(first) > 0 && second.CompareTo(third) > 0)
+            {
+                Console.WriteLine($"Maximum value is {second}");
+            }
+            else if (third.CompareTo(first) > 0 && third.CompareTo(second) > 0)
+            {
+                Console.WriteLine($"Maximum value is {third}");
+            }
+            else
+            {
+                Console.WriteLine("Two or three numbers are same");
+            }
+        }
     }
 }
